@@ -8,12 +8,35 @@
 <title>QuickSearch - jQueryプラグインまとめのカルマ</title>
 
 <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.1.js"></script>
-<script src="jquery.quicksearch.js"></script>
+<script src="https://rawgithub.com/yacamochi/EmployeeList/gh-pages/jquery.quicksearch.js"></script>
 <script>
 $(function () {
   $('input#id_search').quicksearch('table tbody tr');
 });
 </script>
+
+<style type="text/css">
+.table_Employee{
+width: 100%;
+border-collapse: collapse;
+}
+.table_Employee th{
+width: 25%;
+padding: 6px;
+text-align: left;
+vertical-align: top;
+color: #333;
+background-color: #eee;
+border: 1px solid #b9b9b9;
+}
+.table_Employee td{
+padding: 6px;
+background-color: #fff;
+border: 1px solid #b9b9b9;
+}
+</style>
+
+
 </head>
 <body>
 <h1>QuickSearchのデモでーす。</h1>
@@ -22,7 +45,7 @@ $(function () {
   <input type="text" name="search" value="" id="id_search" />
 </form>
 
-<table class="table_example">
+<table class="table_Employee">
 <thead>
   <tr><th>Version</th><th>CodeName</th><th>Release</th><th>Package</th><th>テスト</th></tr>
 </thead>
