@@ -46,15 +46,59 @@ table td {
  border-right: 1px solid #ccc;
  border-bottom: 1px solid #ccc;
 }
+dl.search1{
+	position:relative;
+	background-color:#fff;
+	border:1px solid #aaa;
+	border-radius:6px;
+}
+dl.search1 dt{
+	padding:3px;
+}
+dl.search1 dt input{
+	width:70%;
+	height:30px;
+	line-height:30px;
+	background:none;
+	border:none;
+}
+dl.search1 dd{
+	position:absolute;
+	top:1px;
+	right:1px;
+	width:30%;
+}
+dl.search1 dd button{
+	display:block;
+	background:#2b71c8;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	border:none;
+	border-radius: 0 6px 6px 0;
+}
+dl.search1 dd button:hover {
+	background:#4e91e4;
+}
+dl.search1 dd button span{
+	display:block;
+	color:#FFF;
+}
 </style>
 
 </head>
 <body>
 <h1>Black Desert EmployeeList</h1>
 	
-<form action="#">
-  <input type="text" name="search" value="" id="id_search" />
+<form action="#" name="search1" method="post">
+	<dl class="search1">
+		<dt><input type="text" name="search" value="" placeholder="労働者に集めて欲しいアイテムを入力..."  id="id_search" /></dt>
+		<dd><button><span>検索</span></button></dd>
+	</dl>
 </form>
+
+
+
 
 <table class="table">
 <thead>
